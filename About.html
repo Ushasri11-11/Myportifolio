@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600&family=Open+Sans:wght@300;400&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fafafa;
+        color: #333333;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.6;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 60px;
+        background-color: #1c2526;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .logo {
+        font-family: "Lora", serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0d1b9;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s ease;
+      }
+
+      .logo:hover {
+        color: #c8a97e;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links li {
+        margin: 0 25px;
+      }
+
+      .nav-links a {
+        color: #e0d1b9;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #c8a97e;
+      }
+
+      section {
+        padding: 80px 100px;
+        text-align: center;
+        background-color: #ffffff;
+        margin-top: 70px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h2 {
+        font-family: "Lora", serif;
+        font-size: 38px;
+        color: #2c2c2c;
+        margin-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #c8a97e;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
+      h3 {
+        font-family: "Lora", serif;
+        font-size: 24px;
+        color: #4a4a4a;
+        margin: 40px 0 20px;
+        font-style: italic;
+      }
+
+      p {
+        font-size: 18px;
+        color: #555555;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+      }
+
+      .certificates {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .certificate {
+        width: 280px;
+        height: 280px;
+        border: 3px solid #e0d1b9;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+
+      .certificate:hover {
+        transform: scale(1.03);
+      }
+
+      .certificate img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(95%);
+        transition: filter 0.3s ease;
+      }
+
+      .certificate:hover img {
+        filter: brightness(100%);
+      }
+
+      ul {
+        list-style-type: none;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        text-align: left;
+        padding: 0 20px;
+      }
+
+      ul li {
+        font-size: 16px;
+        color: #555555;
+        padding: 10px 0;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      ul li:before {
+        content: "•";
+        color: #c8a97e;
+        font-weight: 600;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #000;
+      }
+
+      .close {
+        position: absolute;
+        top: 25px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10001;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="display: none">THIS IS ABOUT ME</h1>
+
+    <nav>
+      <div class="logo">Gude Usha Sri</div>
+      <ul class="nav-links">
+        <li><a href="portifolio.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated student with a passion for learning and innovation.<br />
+        Alongside my academic journey, I have explored various creative and
+        athletic fields, earning recognition for my talents.
+      </p>
+
+      <h3>Communicative English Certification</h3>
+      <p>
+        I was certified by the
+        <strong>Institute of Language Management (ILM)</strong> for my strong
+        communicative English skills. ILM is a prestigious institute based in
+        Bangalore that focuses on improving English proficiency among students
+        across India. I successfully completed this course in level Seven during
+        the academic year 2016–2017 and was awarded an
+        <strong>‘A’ grade</strong> for my performance.
+      </p>
+
+      <div class="certificates">
+        <div class="certificate">
+          <img src="images/ILM.jpg" alt="ILM English Certificate" />
+        </div>
+      </div>
+
+      <h3>Dance Achievements</h3>
+      <div class="certificates">
+        <div class="certificate">
+          <img src="images/dancecerti1.jpg" alt="Dance Certificate 1" />
+        </div>
+        <div class="certificate">
+          <img src="images/certdance22.jpg" alt="Dance Certificate 2" />
+        </div>
+      </div>
+
+      <h3>Anchoring Achievements</h3>
+      <div class="certificates">
+        <div class="certificate">
+          <img src="images/anchoring22.jpg" alt="Anchoring Certificate 1" />
+        </div>
+        <div class="certificate">
+          <img src="images/anchoring11.jpg" alt="Anchoring Certificate 2" />
+        </div>
+      </div>
+
+      <h3>Sports Achievements</h3>
+      <div class="certificates">
+        <div class="certificate">
+          <img src="images/sports1.jpg" alt="Sports Certificate 1" />
+        </div>
+        <div class="certificate">
+          <img src="images/sports22.jpg" alt="Sports Certificate 2" />
+        </div>
+        <div class="certificate">
+          <img src="images/sports33.jpg" alt="Sports Certificate 3" />
+        </div>
+        <div class="certificate">
+          <img src="images/anchoring11.jpg" alt="Sports Certificate 4" />
+        </div>
+      </div>
+
+      <h3>Personal Traits</h3>
+      <ul>
+        <li>
+          Talkative and expressive, making conversations engaging and lively.
+        </li>
+        <li>
+          A natural problem solver, always eager to find creative solutions.
+        </li>
+        <li>
+          Compassionate and a little emotional, valuing deep connections with
+          people.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Modal Viewer -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <!-- Script for Modal -->
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const closeBtn = document.querySelector(".close");
+
+      document.querySelectorAll(".certificate img").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

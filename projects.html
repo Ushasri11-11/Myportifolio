@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects | GUDE USHA SRI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 80px;
+        background: black;
+        opacity: 0.95;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 0 15px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffcc00;
+      }
+
+      .page-header {
+        text-align: center;
+        padding: 150px 20px 50px;
+      }
+
+      .page-header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #222;
+      }
+
+      .page-header p {
+        font-size: 18px;
+        color: #555;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 50px 80px;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      .project-card p {
+        font-size: 15px;
+        color: #555;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">GUDE USHA SRI</div>
+      <ul class="nav-links">
+        <li><a href="portifolio.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="page-header">
+      <h1>My Projects</h1>
+      <p>
+        These are some of the key projects I've worked on throughout my journey.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Alzheimer's Detection using Deep Learning</h3>
+        <p>
+          This is my conference paper project where I used deep learning models
+          such as VGG19, ResNet, DenseNet, and CNN to detect Alzheimer's from
+          MRI scans.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Blood Connect Portal</h3>
+        <p>
+          A platform developed to find blood donors and blood banks, post blood
+          requests, and enable willing donors to register and donate. It also
+          tracks donors, blood banks, and blood donation camps based on specific
+          dates.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Education Android Application</h3>
+        <p>
+          Developed an Android app named "Education" to assist intermediate
+          students with learning resources and guidance.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Wearable Device for Women Protection</h3>
+        <p>
+          Participated in an ideathon at Vardan Company with a wearable device
+          concept for women's safety. The idea used an extension ring mechanism,
+          though the project was not selected in the final round.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Cybersecurity Internship</h3>
+        <p>
+          Completed an online cybersecurity internship course from Edustation.
+          Gained foundational knowledge in protecting digital infrastructure and
+          understanding cyber threats.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 GUDE USHA SRI. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

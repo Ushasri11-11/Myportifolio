@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | GUDE USHA SRI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 80px;
+        z-index: 1000;
+      }
+
+      .logo {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 0 15px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffcc00;
+      }
+
+      .contact-section {
+        padding: 150px 20px 50px;
+        text-align: center;
+      }
+
+      .contact-section h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .contact-section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      .contact-info {
+        margin-bottom: 40px;
+        font-size: 16px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+
+      .contact-form button {
+        padding: 12px 25px;
+        background-color: #222;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .contact-form button:hover {
+        background-color: #444;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: white;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">GUDE USHA SRI</div>
+      <ul class="nav-links">
+        <li><a href="portifolio.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h1>Contact Me</h1>
+      <p>
+        Feel free to reach out for collaboration, queries, or just to connect!
+      </p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> gudeushasri@gmail.com</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/usha-sri-gude-046973314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">My LinkedIn Profile</a>
+        </p>
+       
+
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 GUDE USHA SRI. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
