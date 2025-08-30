@@ -108,7 +108,6 @@
         padding: 0 20px;
       }
 
-      /* === Certificate Gallery === */
       .certificates {
         display: flex;
         justify-content: center;
@@ -120,34 +119,29 @@
       .certificate {
         width: 280px;
         height: 280px;
-        border-radius: 12px;
+        border: 3px solid #e0d1b9;
+        border-radius: 8px;
         overflow: hidden;
         background: #fff;
-        transition: all 0.3s ease;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
 
       .certificate:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        transform: scale(1.03);
       }
 
       .certificate img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         filter: brightness(95%);
-        transition: filter 0.3s ease, transform 0.3s ease;
+        transition: filter 0.3s ease;
       }
 
       .certificate:hover img {
         filter: brightness(100%);
-        transform: scale(1.05);
       }
 
       ul {
@@ -176,7 +170,6 @@
         transform: translateY(-50%);
       }
 
-      /* === Modal View === */
       .modal {
         display: none;
         position: fixed;
@@ -195,7 +188,7 @@
         display: block;
         max-width: 90%;
         max-height: 80%;
-        border-radius: 12px;
+        border-radius: 10px;
         box-shadow: 0 0 20px #000;
       }
 
@@ -242,6 +235,16 @@
       </p>
 
       <h3>Communicative English Certification</h3>
+      <p>
+        I was certified by the
+        <strong>Institute of Language Management (ILM)</strong> for my strong
+        communicative English skills. ILM is a prestigious institute based in
+        Bangalore that focuses on improving English proficiency among students
+        across India. I successfully completed this course in level Seven during
+        the academic year 2016–2017 and was awarded an
+        <strong>‘A’ grade</strong> for my performance.
+      </p>
+
       <div class="certificates">
         <div class="certificate">
           <img src="images/ILM.jpg" alt="ILM English Certificate" />
@@ -286,8 +289,12 @@
 
       <h3>Personal Traits</h3>
       <ul>
-        <li>Talkative and expressive, making conversations engaging and lively.</li>
-        <li>A natural problem solver, always eager to find creative solutions.</li>
+        <li>
+          Talkative and expressive, making conversations engaging and lively.
+        </li>
+        <li>
+          A natural problem solver, always eager to find creative solutions.
+        </li>
         <li>
           Compassionate and a little emotional, valuing deep connections with
           people.
@@ -326,5 +333,3 @@
     </script>
   </body>
 </html>
-
-
