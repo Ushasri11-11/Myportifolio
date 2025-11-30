@@ -144,6 +144,25 @@
         filter: brightness(100%);
       }
 
+      .certificate-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certificate-item img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.certificate-item p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+
       ul {
         list-style-type: none;
         max-width: 600px;
@@ -250,6 +269,31 @@
           <img src="images/ILM.jpg" alt="ILM English Certificate" />
         </div>
       </div>
+
+      <!-- NPTEL Certifications -->
+<div class="project-card">
+  <h3>NPTEL Certifications</h3>
+
+  <div class="certificate-gallery">
+
+    <div class="certificate-item">
+      <img src="images/nptel_hci.png" alt="NPTEL HCI Certificate" />
+      <p><strong>Design & Implementation of Human–Computer Interfaces</strong> – Elite (75%)</p>
+    </div>
+
+    <div class="certificate-item">
+      <img src="images/nptel_iot.png" alt="NPTEL IoT Certificate" />
+      <p><strong>Industry 4.0 & Industrial IoT</strong> – Elite (73%)</p>
+    </div>
+
+    <div class="certificate-item">
+      <img src="images/nptel_pom.png" alt="NPTEL POM Certificate" />
+      <p><strong>Principles of Management</strong> – Completed (54%)</p>
+    </div>
+
+  </div>
+</div>
+
 
       <h3>Dance Achievements</h3>
       <div class="certificates">
